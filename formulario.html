@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Associe-se ao maior do Nordeste</h1><br>
+        <p1 id="subtitulo">Complete os seus dados abaixo:</p1>
+        <br><br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label for="genero"><strong>Qual seu gênero?</strong></label>
+            <label>
+                <input type="radio" name="gen" value="masculino" required>Masculino
+            </label>
+            <label>
+                <input type="radio" name="gen" value="feminino" required>Feminino
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="local"><strong>Onde você mora?</strong></label>
+            <select id="localização" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Recife</option>
+                <option>Região Metropolitana</option>
+                <option>Interior</option>
+                <option>Fora de Pernambuco (outro estado ou país)</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div>
+                <label for="opções"><strong>Selecione as opções que mais se encaixa com você:</strong></label><br><br>
+                <input type="checkbox" id="opção1" name="opção1" value="Utilizarei o clube">
+                <label for="opção1">Pretendo utilizar o clube</label>
+                <input type="checkbox" id="opção2" name="opção2" value="Irei aos jogos">
+                <label for="opção2">Irei aos jogos</label><br>
+                <input type="checkbox" id="opção3" name="opção3" value="Votarei nas eleições">
+                <label for="opção3">Votarei nas eleições</label>
+                <input type="checkbox" id="opção4" name="opção4" value="Comparecerei aos pré jogos na sede">
+                <label for="opção4">Comparecerei aos pré jogos na sede</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br><br><br><br><br>
+            <label for="sugestão"><strong>Tem alguma sugestão? Deixe-a abaixo:</strong></label>
+            <textarea row="6" style="width: 26em" id="sugestão" name="sugestão"></textarea>
+        </div>
+
+        <button class="botão" type="submit">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
